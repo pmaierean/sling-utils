@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- output to console -->
+	<appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{dd MMM yyyy HH:mm:ss,SSS}],[%-5p],[%-20c{1}], %m%n"/>
+		</layout>
+	</appender>
+
+	<!-- output to file -->
+
+	<appender name="fileAppender" class="org.apache.log4j.DailyRollingFileAppender">
+		<!-- eg: TL_onlinePayout.log -->
+		<param name="File" value="application.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{dd MMM yyyy HH:mm:ss,SSS}],[%-5p],[%-20c{1}], %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="applicationAppender" class="org.apache.log4j.AsyncAppender">
+		<appender-ref ref="fileAppender" />
+	</appender>
+	
+	<logger name="com.maiereni">
+		<level value="debug" />
+	</logger>
+
+	<root>
+		<level value="error"></level>
+		<appender-ref ref="consoleAppender"/>
+		<appender-ref ref="applicationAppender"/>
+	</root>
+	
+</log4j:configuration> 
