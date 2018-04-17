@@ -5,7 +5,7 @@
 	<!-- output to console -->
 	<appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="[%d{dd MMM yyyy HH:mm:ss,SSS}],[%-5p],[%-20c{1}], %m%n"/>
+			<param name="ConversionPattern" value="[%d{dd MMM yyyy HH:mm:ss,SSS}],[%-5p],[%t] (%C:%L), %m%n"/>
 		</layout>
 	</appender>
 
@@ -15,7 +15,7 @@
 		<!-- eg: TL_onlinePayout.log -->
 		<param name="File" value="application.log" />
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="[%d{dd MMM yyyy HH:mm:ss,SSS}],[%-5p],[%-20c{1}], %m%n" />
+			<param name="ConversionPattern" value="[%d{dd MMM yyyy HH:mm:ss,SSS}],[%-5p],[%t] (%C:%L), %m%n" />
 		</layout>
 	</appender>
 

@@ -15,13 +15,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.maiereni.sling.provisioning.test.reader;
+package com.maiereni.sling.util;
 
 import java.io.File;
 import java.io.FileReader;
+import java.io.LineNumberReader;
 import java.io.StringWriter;
 import java.nio.charset.Charset;
 import java.util.Enumeration;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -55,25 +57,29 @@ import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import com.maiereni.sling.util.SlingGitCloner;
+import com.maiereni.sling.util.bean.Bundle;
 
 /**
  * Tests the Model Reader
  * @author Petre Maierean
  *
  */
-public class TestModelReader {
-	private static final Logger logger = LoggerFactory.getLogger(TestModelReader.class);
-	private DocumentBuilder documentBuilder;
+public class SlingModelReader {
+	private static final Logger logger = LoggerFactory.getLogger(SlingModelReader.class);
+	protected DocumentBuilder documentBuilder;
 	private File fLocalGitDir;
+	private Map<String, Bundle> bundles;
+	protected BundleResolver bundleResolver;
 	
-	public TestModelReader() throws Exception {
+	public SlingModelReader() throws Exception {
 		String userDir = System.getProperty(SlingGitCloner.USER_HOME);
 		String gitDir = System.getProperty(SlingGitCloner.GIT_HOME, userDir + "/git");
 		fLocalGitDir = new File(gitDir);
 		if (!fLocalGitDir.exists())
 			throw new Exception("No Git repository");
 		documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+		bundleResolver = new BundleResolver();
+		this.bundles = init(true);
 	}
 	
 	public Model readModel(@Nonnull final String sModelDir) throws Exception {
@@ -144,7 +150,7 @@ public class TestModelReader {
 			Element runModes = document.createElement("runModes");
 			ret.appendChild(runModes);
 			for(RunMode rm : feature.getRunModes()) {
-				Element runMode = createRunMode(document, rm);
+				Element runMode = createRunMode(document, rm, feature);
 				runModes.appendChild(runMode);
 			}
 		}
@@ -175,7 +181,7 @@ public class TestModelReader {
 		return ret;
 	}
 	
-	private Element createRunMode(final Document document, final RunMode rm) {
+	private Element createRunMode(final Document document, final RunMode rm, final Feature feature) {
 		Element ret = document.createElement("runMode");
 		if (rm.getLocation() != null)
 			ret.setAttribute("location", rm.getLocation());
@@ -183,7 +189,7 @@ public class TestModelReader {
 			Element ag = document.createElement("artifactGroups");
 			ret.appendChild(ag);
 			for(ArtifactGroup a : rm.getArtifactGroups()) {
-				Element group = createArtifactGroup(document, a);
+				Element group = createArtifactGroup(document, a, feature);
 				ag.appendChild(group);
 			}
 		}
@@ -245,10 +251,11 @@ public class TestModelReader {
 		return ret;
 	}
 
-	private Element createArtifactGroup(final Document document, final ArtifactGroup group) {
+	private Element createArtifactGroup(final Document document, final ArtifactGroup group, final Feature feature) {
 		Element ret = document.createElement("artifactGroup");
 		ret.setAttribute("level", "" + group.getStartLevel());
-		ret.setAttribute("location", group.getLocation());
+		if (StringUtils.isNotBlank(group.getLocation()))
+			ret.setAttribute("location", group.getLocation());
 		if (group.getComment()!=null) {
 			Element c = document.createElement("comment");
 			c.setTextContent(group.getComment());
@@ -260,14 +267,14 @@ public class TestModelReader {
 			Iterator<Artifact> iArtifact = group.iterator();
 			while(iArtifact.hasNext()) {
 				Artifact artifact = iArtifact.next();
-				Element el = createArtifact(document, artifact);
+				Element el = createArtifact(document, artifact, feature);
 				c.appendChild(el);
 			}
 		}
 		return ret;
 	}
 	
-	private Element createArtifact(final Document document, final Artifact artifact) {
+	private Element createArtifact(final Document document, final Artifact artifact, final Feature feature) {
 		Element ret = document.createElement("artifact");
 		ret.setAttribute("artifactId", artifact.getArtifactId());
 		ret.setAttribute("groupId", artifact.getGroupId());
@@ -284,6 +291,13 @@ public class TestModelReader {
 			c.setTextContent(artifact.getComment());
 			//ret.appendChild(c);			
 		}
+		Bundle bundle = bundleResolver.getBundle(artifact, feature);
+		String bundleName = artifact.getArtifactId();
+		if (bundle != null) 
+			bundleName = bundle.getName();
+		if (!appendBundle(ret, bundleName, bundle))
+			appendBundle(ret, artifact.getGroupId() + "." +  artifact.getArtifactId(), bundle);
+				
 		if (!artifact.getMetadata().isEmpty()) {
 			Element c = document.createElement("metadata");
 			ret.appendChild(c);			
@@ -297,7 +311,22 @@ public class TestModelReader {
 		}
 		return ret;		
 	}
-
+	
+	private boolean appendBundle(final Element el, final String bundleName, final Bundle b) {
+		boolean ret = false;
+		if (bundles.containsKey(bundleName)) {
+			Element bdl = el.getOwnerDocument().createElement("bundle");
+			Bundle bundle = bundles.get(bundleName);
+			bdl.setAttribute("id", "" + bundle.getPos());
+			if (StringUtils.isNotBlank(bundle.getPkgName()))
+				bdl.setAttribute("category", bundle.getPkgName());
+			bdl.setTextContent(bundle.getText());
+			el.appendChild(bdl);
+			ret = true;
+		}		
+		return ret;
+	}
+	
 	private Element createConfiguration(final Document document, final Configuration cfg) {
 		Element ret = document.createElement("configuration");
 		ret.setAttribute("location", cfg.getLocation());
@@ -329,13 +358,51 @@ public class TestModelReader {
 	}
 
 	
+	protected Map<String, Bundle> init(boolean b) {
+		Map<String, Bundle> bundles = new HashMap<String, Bundle>();
+		String sBundles = System.getProperty("bundles", "./bundles.csv");
+		File fBundles = new File(sBundles);
+		if (fBundles.exists()) {
+			try (FileReader fr = new FileReader(fBundles)) {
+				LineNumberReader lnr = new LineNumberReader(fr);
+				String s = null;
+				while((s = lnr.readLine()) != null) {
+					String[] sp = s.split(",");
+					Bundle bundle = new Bundle();
+					bundle.setPos(Integer.parseInt(sp[0]));
+					bundle.setText(sp[1]);
+					bundle.setName(sp[2]);
+					bundle.setVersion(sp[3]);
+					String pkgName = "";
+					for(int i=4; i<sp.length; i++) {
+						String sAdd = sp[i];
+						sAdd = sAdd.replaceAll("'", "");
+						if (pkgName.equals(""))
+							pkgName = sAdd;
+						else
+							pkgName = pkgName + "," + sp[i];
+					}
+					bundle.setPkgName(pkgName);
+					bundles.put(sp[2], bundle);
+					if (b)
+						bundles.put(sp[1], bundle);
+				}
+				lnr.close();
+				logger.debug("Loaded {} bundles", bundles.size());
+			}
+			catch(Exception e) {
+				logger.error("Failed to load from file", e);
+			}
+		}
+		return bundles;
+	}
+	
 	public static void main(final String[] args) {
 		try {
-			TestModelReader reader = new TestModelReader();
+			SlingModelReader reader = new SlingModelReader();
 			Model model = reader.readModel(args[0]);
-			if (args.length > 1) {
+			if (args.length > 1) 
 				reader.printToXML(model, args[1]);
-			}
 		}
 		catch(Exception e) {
 			logger.error("The model could not be read", e);

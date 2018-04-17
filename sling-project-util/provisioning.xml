@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<model location="">
+  <feature name=":boot" special="true" type="plain">
+    <variables>
+      <variable name="slf4j.version" value="1.7.25"/>
+    </variables>
+    <runModes>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="0">
+            <artifacts>
+              <artifact artifactId="org.apache.aries.util" groupId="org.apache.aries" type="jar" version="1.1.3">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:52" repositoryPath="org/apache/aries/org.apache.aries.util/1.1.3/org.apache.aries.util-1.1.3.jar"/>
+                <bundle id="4">Apache Aries Util</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.configadmin" groupId="org.apache.felix" type="jar" version="1.8.16">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:50" repositoryPath="org/apache/felix/org.apache.felix.configadmin/1.8.16/org.apache.felix.configadmin-1.8.16.jar"/>
+                <bundle category="osgi" id="5">Apache Felix Configuration Admin Service</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.eventadmin" groupId="org.apache.felix" type="jar" version="1.4.10">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:51" repositoryPath="org/apache/felix/org.apache.felix.eventadmin/1.4.10/org.apache.felix.eventadmin-1.4.10.jar"/>
+                <bundle id="6">Apache Felix EventAdmin</bundle>
+              </artifact>
+              <artifact artifactId="geronimo-atinject_1.0_spec" groupId="org.apache.geronimo.specs" type="jar" version="1.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:54" repositoryPath="org/apache/geronimo/specs/geronimo-atinject_1.0_spec/1.0/geronimo-atinject_1.0_spec-1.0.jar"/>
+                <bundle id="1">Apache Geronimo JSR-330 Spec API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.commons.log" groupId="org.apache.sling" type="jar" version="5.1.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:37" repositoryPath="org/apache/sling/org.apache.sling.commons.log/5.1.0/org.apache.sling.commons.log-5.1.0.jar"/>
+                <bundle category="sling" id="7">Apache Sling Commons Log</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.commons.logservice" groupId="org.apache.sling" type="jar" version="1.0.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:38" repositoryPath="org/apache/sling/org.apache.sling.commons.logservice/1.0.6/org.apache.sling.commons.logservice-1.0.6.jar"/>
+                <bundle category="sling" id="8">Apache Sling OSGi LogService Implementation</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.fragment.transaction" groupId="org.apache.sling" type="jar" version="1.0.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:43" repositoryPath="org/apache/sling/org.apache.sling.fragment.transaction/1.0.0/org.apache.sling.fragment.transaction-1.0.0.jar"/>
+                <bundle category="sling" id="9">Apache Sling System Bundle Extension: Java Transaction API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.fragment.ws" groupId="org.apache.sling" type="jar" version="1.0.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:45" repositoryPath="org/apache/sling/org.apache.sling.fragment.ws/1.0.2/org.apache.sling.fragment.ws-1.0.2.jar"/>
+                <bundle category="sling" id="10">Apache Sling System Bundle Extension: WS APIs</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.fragment.xml" groupId="org.apache.sling" type="jar" version="1.0.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:42" repositoryPath="org/apache/sling/org.apache.sling.fragment.xml/1.0.2/org.apache.sling.fragment.xml-1.0.2.jar"/>
+                <bundle category="sling" id="11">Apache Sling System Bundle Extension: XML APIs</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.installer.core" groupId="org.apache.sling" type="jar" version="3.8.12">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:47" repositoryPath="org/apache/sling/org.apache.sling.installer.core/3.8.12/org.apache.sling.installer.core-3.8.12.jar"/>
+                <bundle category="sling" id="12">Apache Sling Installer</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.installer.factory.configuration" groupId="org.apache.sling" type="jar" version="1.1.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:49" repositoryPath="org/apache/sling/org.apache.sling.installer.factory.configuration/1.1.2/org.apache.sling.installer.factory.configuration-1.1.2.jar"/>
+                <bundle category="sling" id="13">Apache Sling Installer Configuration Admin Support</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.installer.provider.file" groupId="org.apache.sling" type="jar" version="1.1.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:48" repositoryPath="org/apache/sling/org.apache.sling.installer.provider.file/1.1.0/org.apache.sling.installer.provider.file-1.1.0.jar"/>
+                <bundle category="sling" id="14">Apache Sling File Installer</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.javax.activation" groupId="org.apache.sling" type="jar" version="0.1.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:44" repositoryPath="org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar"/>
+                <bundle category="sling" id="15">Apache Sling javax.activation bundle</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.launchpad.installer" groupId="org.apache.sling" type="jar" version="1.2.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:46" repositoryPath="org/apache/sling/org.apache.sling.launchpad.installer/1.2.2/org.apache.sling.launchpad.installer-1.2.2.jar"/>
+                <bundle category="sling" id="16">Apache Sling Launchpad Installer</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.settings" groupId="org.apache.sling" type="jar" version="1.3.8">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:41" repositoryPath="org/apache/sling/org.apache.sling.settings/1.3.8/org.apache.sling.settings-1.3.8.jar"/>
+                <bundle category="sling" id="17">Apache Sling Settings</bundle>
+              </artifact>
+              <artifact artifactId="jcl-over-slf4j" groupId="org.slf4j" type="jar" version="${slf4j.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:39" repositoryPath="org/slf4j/jcl-over-slf4j/${slf4j.version}/jcl-over-slf4j-${slf4j.version}.jar"/>
+                <bundle id="2">jcl-over-slf4j</bundle>
+              </artifact>
+              <artifact artifactId="log4j-over-slf4j" groupId="org.slf4j" type="jar" version="${slf4j.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:40" repositoryPath="org/slf4j/log4j-over-slf4j/${slf4j.version}/log4j-over-slf4j-${slf4j.version}.jar"/>
+                <bundle id="3">log4j-over-slf4j</bundle>
+              </artifact>
+              <artifact artifactId="slf4j-api" groupId="org.slf4j" type="jar" version="${slf4j.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\boot.txt:36" repositoryPath="org/slf4j/slf4j-api/${slf4j.version}/slf4j-api-${slf4j.version}.jar"/>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+        <settings>
+          <setting name="localIndexDir" value="${sling.home}/repository/index"/>
+          <setting name="repository.home" value="${sling.home}/repository"/>
+          <setting name="sling.run.mode.install.options" value="oak_tar,oak_mongo"/>
+        </settings>
+      </runMode>
+    </runModes>
+  </feature>
+  <feature name=":launchpad" special="true" type="plain">
+    <runModes>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="0">
+            <artifacts>
+              <artifact artifactId="org.apache.sling.launchpad.base" groupId="org.apache.sling" type="jar" version="5.6.10-2.6.26">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\launchpad.txt:23" repositoryPath="org/apache/sling/org.apache.sling.launchpad.base/5.6.10-2.6.26/org.apache.sling.launchpad.base-5.6.10-2.6.26.jar"/>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+      </runMode>
+    </runModes>
+  </feature>
+  <feature name="composum-console" type="plain">
+    <variables>
+      <variable name="composum.version" value="1.8.2"/>
+    </variables>
+    <runModes>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="20">
+            <artifacts>
+              <artifact artifactId="composum-sling-core-commons" groupId="com.composum.sling.core" type="jar" version="${composum.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\composum.txt:24" repositoryPath="com/composum/sling/core/composum-sling-core-commons/${composum.version}/composum-sling-core-commons-${composum.version}.jar"/>
+                <bundle category="composum,core'" id="77">Composum Core Sling API</bundle>
+              </artifact>
+              <artifact artifactId="composum-sling-core-config" groupId="com.composum.sling.core" type="jar" version="${composum.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\composum.txt:25" repositoryPath="com/composum/sling/core/composum-sling-core-config/${composum.version}/composum-sling-core-config-${composum.version}.jar"/>
+                <bundle category="composum,core'" id="78">Composum Core Configuration</bundle>
+              </artifact>
+              <artifact artifactId="composum-sling-core-console" groupId="com.composum.sling.core" type="jar" version="${composum.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\composum.txt:26" repositoryPath="com/composum/sling/core/composum-sling-core-console/${composum.version}/composum-sling-core-console-${composum.version}.jar"/>
+                <bundle category="composum,core'" id="79">Composum Core Console</bundle>
+              </artifact>
+              <artifact artifactId="composum-sling-core-jslibs" groupId="com.composum.sling.core" type="jar" version="${composum.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\composum.txt:27" repositoryPath="com/composum/sling/core/composum-sling-core-jslibs/${composum.version}/composum-sling-core-jslibs-${composum.version}.jar"/>
+                <bundle category="composum,core'" id="80">Composum Core JS Libraries</bundle>
+              </artifact>
+              <artifact artifactId="composum-sling-package-manager" groupId="com.composum.sling.core" type="jar" version="${composum.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\composum.txt:29" repositoryPath="com/composum/sling/core/composum-sling-package-manager/${composum.version}/composum-sling-package-manager-${composum.version}.jar"/>
+                <bundle category="composum,core'" id="81">Composum Package Manager</bundle>
+              </artifact>
+              <artifact artifactId="composum-sling-user-management" groupId="com.composum.sling.core" type="jar" version="${composum.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\composum.txt:28" repositoryPath="com/composum/sling/core/composum-sling-user-management/${composum.version}/composum-sling-user-management-${composum.version}.jar"/>
+                <bundle category="composum,core'" id="82">Composum User Managmenent</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.jackrabbit.vault" groupId="org.apache.jackrabbit.vault" type="jar" version="3.1.42">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\composum.txt:30" repositoryPath="org/apache/jackrabbit/vault/org.apache.jackrabbit.vault/3.1.42/org.apache.jackrabbit.vault-3.1.42.jar"/>
+                <bundle category="jackrabbit" id="83">Apache Jackrabbit FileVault Core Bundle</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+      </runMode>
+    </runModes>
+  </feature>
+  <feature name="models-jacksonexporter" type="plain">
+    <runModes>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="0">
+            <artifacts>
+              <artifact artifactId="jackson-annotations" groupId="com.fasterxml.jackson.core" type="jar" version="2.9.3">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-models-jacksonexporter.txt:23" repositoryPath="com/fasterxml/jackson/core/jackson-annotations/2.9.3/jackson-annotations-2.9.3.jar"/>
+                <bundle id="93">Jackson-annotations</bundle>
+              </artifact>
+              <artifact artifactId="jackson-core" groupId="com.fasterxml.jackson.core" type="jar" version="2.9.3">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-models-jacksonexporter.txt:24" repositoryPath="com/fasterxml/jackson/core/jackson-core/2.9.3/jackson-core-2.9.3.jar"/>
+                <bundle id="94">Jackson-core</bundle>
+              </artifact>
+              <artifact artifactId="jackson-databind" groupId="com.fasterxml.jackson.core" type="jar" version="2.9.3">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-models-jacksonexporter.txt:25" repositoryPath="com/fasterxml/jackson/core/jackson-databind/2.9.3/jackson-databind-2.9.3.jar"/>
+                <bundle id="95">jackson-databind</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.models.jacksonexporter" groupId="org.apache.sling" type="jar" version="1.0.8">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-models-jacksonexporter.txt:22" repositoryPath="org/apache/sling/org.apache.sling.models.jacksonexporter/1.0.8/org.apache.sling.models.jacksonexporter-1.0.8.jar"/>
+                <bundle category="sling" id="136">Apache Sling Models Model Exporter - Jackson</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+      </runMode>
+    </runModes>
+  </feature>
+  <feature name="oak" type="plain">
+    <variables>
+      <variable name="oak.version" value="1.6.8"/>
+    </variables>
+    <runModes>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="10">
+            <artifacts>
+              <artifact artifactId="org.apache.felix.jaas" groupId="org.apache.felix" type="jar" version="1.0.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\oak.txt:27" repositoryPath="org/apache/felix/org.apache.felix.jaas/1.0.2/org.apache.felix.jaas-1.0.2.jar"/>
+                <bundle id="45">Apache Felix JAAS Support</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+          <artifactGroup level="15">
+            <artifacts>
+              <artifact artifactId="oak-blob" groupId="org.apache.jackrabbit" type="jar" version="${oak.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\oak.txt:33" repositoryPath="org/apache/jackrabbit/oak-blob/${oak.version}/oak-blob-${oak.version}.jar"/>
+                <bundle category="oak" id="61">Oak Blob Store</bundle>
+              </artifact>
+              <artifact artifactId="oak-commons" groupId="org.apache.jackrabbit" type="jar" version="${oak.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\oak.txt:31" repositoryPath="org/apache/jackrabbit/oak-commons/${oak.version}/oak-commons-${oak.version}.jar"/>
+                <bundle category="oak" id="62">Oak Commons</bundle>
+              </artifact>
+              <artifact artifactId="oak-core" groupId="org.apache.jackrabbit" type="jar" version="${oak.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\oak.txt:30" repositoryPath="org/apache/jackrabbit/oak-core/${oak.version}/oak-core-${oak.version}.jar"/>
+                <bundle category="oak" id="63">Oak Core</bundle>
+              </artifact>
+              <artifact artifactId="oak-jcr" groupId="org.apache.jackrabbit" type="jar" version="${oak.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\oak.txt:34" repositoryPath="org/apache/jackrabbit/oak-jcr/${oak.version}/oak-jcr-${oak.version}.jar"/>
+                <bundle category="oak" id="64">Oak JCR Binding</bundle>
+              </artifact>
+              <artifact artifactId="oak-lucene" groupId="org.apache.jackrabbit" type="jar" version="${oak.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\oak.txt:32" repositoryPath="org/apache/jackrabbit/oak-lucene/${oak.version}/oak-lucene-${oak.version}.jar"/>
+                <bundle category="oak" id="65">Oak Lucene</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+          <artifactGroup level="16">
+            <artifacts>
+              <artifact artifactId="org.apache.sling.jcr.oak.server" groupId="org.apache.sling" type="jar" version="1.1.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\oak.txt:46" repositoryPath="org/apache/sling/org.apache.sling.jcr.oak.server/1.1.4/org.apache.sling.jcr.oak.server-1.1.4.jar"/>
+                <bundle category="sling" id="76">Apache Sling JCR Oak Repository Server</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+        <configurations>
+          <configuration factoryPid="" location="" pid="org.apache.felix.jaas.ConfigurationSpi">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="" location="" pid="org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="" location="" pid="org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="" location="" pid="org.apache.jackrabbit.oak.security.user.UserConfigurationImpl">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="" location="" pid="org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.felix.jaas.Configuration.factory" location="" pid="GuestLoginModule">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.felix.jaas.Configuration.factory" location="" pid="LoginModuleImpl">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.felix.jaas.Configuration.factory" location="" pid="TokenLoginModule">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+        </configurations>
+      </runMode>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="15">
+            <artifacts>
+              <artifact artifactId="h2-mvstore" groupId="com.h2database" type="jar" version="1.4.196">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\oak.txt:41" repositoryPath="com/h2database/h2-mvstore/1.4.196/h2-mvstore-1.4.196.jar"/>
+              </artifact>
+              <artifact artifactId="mongo-java-driver" groupId="org.mongodb" type="jar" version="3.4.1">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\oak.txt:40" repositoryPath="org/mongodb/mongo-java-driver/3.4.1/mongo-java-driver-3.4.1.jar"/>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+        <configurations>
+          <configuration factoryPid="" location="" pid="org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+        </configurations>
+        <names>
+          <name>oak_mongo</name>
+        </names>
+      </runMode>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="15">
+            <artifacts>
+              <artifact artifactId="oak-segment-tar" groupId="org.apache.jackrabbit" type="jar" version="${oak.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\oak.txt:37" repositoryPath="org/apache/jackrabbit/oak-segment-tar/${oak.version}/oak-segment-tar-${oak.version}.jar"/>
+                <bundle category="oak" id="51">Oak Segment Tar</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+        <configurations>
+          <configuration factoryPid="" location="" pid="org.apache.jackrabbit.oak.segment.SegmentNodeStoreService">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+        </configurations>
+        <names>
+          <name>oak_tar</name>
+        </names>
+      </runMode>
+    </runModes>
+  </feature>
+  <feature name="repoinit" type="plain">
+    <runModes>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="0">
+            <artifacts>
+              <artifact artifactId="org.apache.sling.jcr.repoinit" groupId="org.apache.sling" type="jar" version="1.1.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\repoinit.txt:23" repositoryPath="org/apache/sling/org.apache.sling.jcr.repoinit/1.1.6/org.apache.sling.jcr.repoinit-1.1.6.jar"/>
+                <bundle category="sling" id="132">Apache Sling JCR RepoInit module</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.provisioning.model" groupId="org.apache.sling" type="jar" version="1.8.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\repoinit.txt:24" repositoryPath="org/apache/sling/org.apache.sling.provisioning.model/1.8.4/org.apache.sling.provisioning.model-1.8.4.jar"/>
+                <bundle category="sling" id="137">Apache Sling Provisioning Model</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.repoinit.parser" groupId="org.apache.sling" type="jar" version="1.2.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\repoinit.txt:22" repositoryPath="org/apache/sling/org.apache.sling.repoinit.parser/1.2.0/org.apache.sling.repoinit.parser-1.2.0.jar"/>
+                <bundle category="sling" id="138">Apache Sling RepoInit Parser</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+        <configurations>
+          <configuration factoryPid="" location="" pid="org.apache.sling.jcr.repoinit.impl.RepositoryInitializer">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+        </configurations>
+      </runMode>
+    </runModes>
+    <additionalSections>
+      <section name="repoinit">
+        <contents># general
+create path (sling:OrderedFolder) /content
+set ACL for everyone
+allow   jcr:read	on /content
+end
+
+# sling-mapping
+create service user sling-mapping
+
+set ACL for sling-mapping
+allow   jcr:read    on /
+end
+
+# sling-readall
+create service user sling-readall
+
+set ACL for sling-readall
+allow   jcr:read    on /
+end
+
+# sling-xss
+create service user sling-xss
+
+create path (sling:Folder) /libs/sling/xss
+create path (sling:Folder) /apps/sling/xss
+
+set ACL for sling-xss
+deny    jcr:all     on /
+allow   jcr:read    on /libs/sling/xss,/apps/sling/xss
+end
+
+# sling-i18n
+create service user sling-i18n
+
+set ACL for sling-i18n
+allow   jcr:read    on /
+end
+
+# sling-jcr-install
+create service user sling-jcr-install
+
+# used for config OSGi writeback
+create path (sling:Folder) /apps/sling/install
+
+set ACL for sling-jcr-install
+allow	jcr:read	on	/
+allow	rep:write	on /apps/sling/install
+end
+</contents>
+      </section>
+    </additionalSections>
+  </feature>
+  <feature name="sling" type="plain">
+    <variables>
+      <variable name="jackrabbit.version" value="2.14.4"/>
+    </variables>
+    <runModes>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="0">
+            <artifacts>
+              <artifact artifactId="commons-codec" groupId="commons-codec" type="jar" version="1.11">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:30" repositoryPath="commons-codec/commons-codec/1.11/commons-codec-1.11.jar"/>
+                <bundle id="84">Apache Commons Codec</bundle>
+              </artifact>
+              <artifact artifactId="commons-collections" groupId="commons-collections" type="jar" version="3.2.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:28" repositoryPath="commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar"/>
+                <bundle id="85">Apache Commons Collections</bundle>
+              </artifact>
+              <artifact artifactId="commons-lang" groupId="commons-lang" type="jar" version="2.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:31" repositoryPath="commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
+                <bundle id="88">Commons Lang</bundle>
+              </artifact>
+              <artifact artifactId="mail" groupId="javax.mail" type="jar" version="1.5.0-b01">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:69" repositoryPath="javax/mail/mail/1.5.0-b01/mail-1.5.0-b01.jar"/>
+                <bundle id="97">JavaMail API (compat)</bundle>
+              </artifact>
+              <artifact artifactId="commons-collections4" groupId="org.apache.commons" type="jar" version="4.1">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:29" repositoryPath="org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar"/>
+                <bundle id="86">Apache Commons Collections</bundle>
+              </artifact>
+              <artifact artifactId="commons-lang3" groupId="org.apache.commons" type="jar" version="3.7">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:32" repositoryPath="org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar"/>
+                <bundle id="89">Apache Commons Lang</bundle>
+              </artifact>
+              <artifact artifactId="commons-math" groupId="org.apache.commons" type="jar" version="2.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:33" repositoryPath="org/apache/commons/commons-math/2.2/commons-math-2.2.jar"/>
+                <bundle id="90">Commons Math</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.http.whiteboard" groupId="org.apache.felix" type="jar" version="3.0.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:71" repositoryPath="org/apache/felix/org.apache.felix.http.whiteboard/3.0.0/org.apache.felix.http.whiteboard-3.0.0.jar"/>
+                <bundle id="98">Apache Felix Http Whiteboard</bundle>
+              </artifact>
+              <artifact artifactId="commons-httpclient" groupId="org.apache.geronimo.bundles" type="jar" version="3.1_2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:34" repositoryPath="org/apache/geronimo/bundles/commons-httpclient/3.1_2/commons-httpclient-3.1_2.jar"/>
+                <bundle id="87">Apache Geronimo Bundles: commons-httpclient-3.1</bundle>
+              </artifact>
+              <artifact artifactId="jstl" groupId="org.apache.geronimo.bundles" type="jar" version="1.2_1">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:70" repositoryPath="org/apache/geronimo/bundles/jstl/1.2_1/jstl-1.2_1.jar"/>
+                <bundle id="96">Apache Geronimo Bundles: jstl-1.2</bundle>
+              </artifact>
+              <artifact artifactId="httpclient-osgi" groupId="org.apache.httpcomponents" type="jar" version="4.5.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:36" repositoryPath="org/apache/httpcomponents/httpclient-osgi/4.5.4/httpclient-osgi-4.5.4.jar"/>
+                <bundle id="91">Apache Apache HttpClient OSGi bundle</bundle>
+              </artifact>
+              <artifact artifactId="httpcore-osgi" groupId="org.apache.httpcomponents" type="jar" version="4.4.9">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:35" repositoryPath="org/apache/httpcomponents/httpcore-osgi/4.4.9/httpcore-osgi-4.4.9.jar"/>
+                <bundle id="92">Apache Apache HttpCore OSGi bundle</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.servicemix.bundles.rhino" groupId="org.apache.servicemix.bundles" type="jar" version="1.7.7.2_1">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:36" repositoryPath="org/apache/servicemix/bundles/org.apache.servicemix.bundles.rhino/1.7.7.2_1/org.apache.servicemix.bundles.rhino-1.7.7.2_1.jar"/>
+                <bundle id="99">Apache ServiceMix :: Bundles :: rhino</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.adapter" groupId="org.apache.sling" type="jar" version="2.1.10">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:37" repositoryPath="org/apache/sling/org.apache.sling.adapter/2.1.10/org.apache.sling.adapter-2.1.10.jar"/>
+                <bundle category="sling" id="100">Apache Sling Adapter Manager Implementation</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.api" groupId="org.apache.sling" type="jar" version="2.18.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:38" repositoryPath="org/apache/sling/org.apache.sling.api/2.18.0/org.apache.sling.api-2.18.0.jar"/>
+                <bundle category="sling" id="101">Apache Sling API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.auth.core" groupId="org.apache.sling" type="jar" version="1.4.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:39" repositoryPath="org/apache/sling/org.apache.sling.auth.core/1.4.2/org.apache.sling.auth.core-1.4.2.jar"/>
+                <bundle category="sling" id="102">Apache Sling Authentication Service</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.auth.form" groupId="org.apache.sling" type="jar" version="1.0.9-SNAPSHOT">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:40" repositoryPath="org/apache/sling/org.apache.sling.auth.form/1.0.9-SNAPSHOT/org.apache.sling.auth.form-1.0.9-SNAPSHOT.jar"/>
+                <bundle category="sling" id="103">Apache Sling Form Based Authentication Handler</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.bundleresource.impl" groupId="org.apache.sling" type="jar" version="2.3.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:41" repositoryPath="org/apache/sling/org.apache.sling.bundleresource.impl/2.3.0/org.apache.sling.bundleresource.impl-2.3.0.jar"/>
+                <bundle category="sling" id="104">Apache Sling Bundle Resource Provider</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.commons.classloader" groupId="org.apache.sling" type="jar" version="1.4.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:42" repositoryPath="org/apache/sling/org.apache.sling.commons.classloader/1.4.2/org.apache.sling.commons.classloader-1.4.2.jar"/>
+                <bundle category="sling" id="108">Apache Sling Dynamic Class Loader Support</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.commons.compiler" groupId="org.apache.sling" type="jar" version="2.3.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:43" repositoryPath="org/apache/sling/org.apache.sling.commons.compiler/2.3.6/org.apache.sling.commons.compiler-2.3.6.jar"/>
+                <bundle category="sling" id="109">Apache Sling Commons Java Compiler</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.commons.fsclassloader" groupId="org.apache.sling" type="jar" version="1.0.8">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:44" repositoryPath="org/apache/sling/org.apache.sling.commons.fsclassloader/1.0.8/org.apache.sling.commons.fsclassloader-1.0.8.jar"/>
+                <bundle category="sling" id="110">Apache Sling Commons FileSystem ClassLoader</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.commons.mime" groupId="org.apache.sling" type="jar" version="2.1.10">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:45" repositoryPath="org/apache/sling/org.apache.sling.commons.mime/2.1.10/org.apache.sling.commons.mime-2.1.10.jar"/>
+                <bundle category="sling" id="111">Apache Sling MIME type mapping support</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.commons.osgi" groupId="org.apache.sling" type="jar" version="2.4.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:46" repositoryPath="org/apache/sling/org.apache.sling.commons.osgi/2.4.0/org.apache.sling.commons.osgi-2.4.0.jar"/>
+                <bundle category="sling" id="112">Apache Sling Commons OSGi support</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.commons.scheduler" groupId="org.apache.sling" type="jar" version="2.7.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:47" repositoryPath="org/apache/sling/org.apache.sling.commons.scheduler/2.7.2/org.apache.sling.commons.scheduler-2.7.2.jar"/>
+                <bundle category="sling" id="113">Apache Sling Scheduler Support</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.commons.threads" groupId="org.apache.sling" type="jar" version="3.2.16">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:48" repositoryPath="org/apache/sling/org.apache.sling.commons.threads/3.2.16/org.apache.sling.commons.threads-3.2.16.jar"/>
+                <bundle category="sling" id="114">Apache Sling Thread Support</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.engine" groupId="org.apache.sling" type="jar" version="2.6.12">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:49" repositoryPath="org/apache/sling/org.apache.sling.engine/2.6.12/org.apache.sling.engine-2.6.12.jar"/>
+                <bundle category="sling" id="120">Apache Sling Engine Implementation</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.fsresource" groupId="org.apache.sling" type="jar" version="2.1.10">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:50" repositoryPath="org/apache/sling/org.apache.sling.fsresource/2.1.10/org.apache.sling.fsresource-2.1.10.jar"/>
+                <bundle category="sling" id="123">Apache Sling File System Resource Provider</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.hc.api" groupId="org.apache.sling" type="jar" version="1.0.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:51" repositoryPath="org/apache/sling/org.apache.sling.hc.api/1.0.2/org.apache.sling.hc.api-1.0.2.jar"/>
+                <bundle category="sling" id="124">Apache Sling Health Check API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.hc.core" groupId="org.apache.sling" type="jar" version="1.2.10">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:52" repositoryPath="org/apache/sling/org.apache.sling.hc.core/1.2.10/org.apache.sling.hc.core-1.2.10.jar"/>
+                <bundle category="sling" id="125">Apache Sling Health Check Core</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.hc.webconsole" groupId="org.apache.sling" type="jar" version="1.1.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:53" repositoryPath="org/apache/sling/org.apache.sling.hc.webconsole/1.1.2/org.apache.sling.hc.webconsole-1.1.2.jar"/>
+                <bundle category="sling" id="126">Apache Sling Health Check Webconsole Plugin</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.i18n" groupId="org.apache.sling" type="jar" version="2.5.12">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:54" repositoryPath="org/apache/sling/org.apache.sling.i18n/2.5.12/org.apache.sling.i18n-2.5.12.jar"/>
+                <bundle category="sling" id="127">Apache Sling I18N Support</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.installer.console" groupId="org.apache.sling" type="jar" version="1.0.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:55" repositoryPath="org/apache/sling/org.apache.sling.installer.console/1.0.2/org.apache.sling.installer.console-1.0.2.jar"/>
+                <bundle category="sling" id="128">Apache Sling Installer WebConsole Plugin</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.installer.hc" groupId="org.apache.sling" type="jar" version="1.0.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:57" repositoryPath="org/apache/sling/org.apache.sling.installer.hc/1.0.0/org.apache.sling.installer.hc-1.0.0.jar"/>
+                <bundle category="sling" id="129">Apache Sling Installer Health Checks</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.installer.provider.jcr" groupId="org.apache.sling" type="jar" version="3.1.26">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:56" repositoryPath="org/apache/sling/org.apache.sling.installer.provider.jcr/3.1.26/org.apache.sling.installer.provider.jcr-3.1.26.jar"/>
+                <bundle category="sling" id="130">Apache Sling JCR Installer</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.jcr.contentloader" groupId="org.apache.sling" type="jar" version="2.2.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:58" repositoryPath="org/apache/sling/org.apache.sling.jcr.contentloader/2.2.4/org.apache.sling.jcr.contentloader-2.2.4.jar"/>
+                <bundle category="sling,jcr,jackrabbit'" id="131">Apache Sling Initial Content Loader</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.jcr.resource" groupId="org.apache.sling" type="jar" version="3.0.10">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:59" repositoryPath="org/apache/sling/org.apache.sling.jcr.resource/3.0.10/org.apache.sling.jcr.resource-3.0.10.jar"/>
+                <bundle category="sling" id="133">Apache Sling JCR Resource Resolver</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.models.api" groupId="org.apache.sling" type="jar" version="1.3.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:60" repositoryPath="org/apache/sling/org.apache.sling.models.api/1.3.6/org.apache.sling.models.api-1.3.6.jar"/>
+                <bundle category="sling" id="134">Apache Sling Models API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.models.impl" groupId="org.apache.sling" type="jar" version="1.4.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:61" repositoryPath="org/apache/sling/org.apache.sling.models.impl/1.4.6/org.apache.sling.models.impl-1.4.6.jar"/>
+                <bundle category="sling" id="135">Apache Sling Models Implementation</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.resourceresolver" groupId="org.apache.sling" type="jar" version="1.6.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:62" repositoryPath="org/apache/sling/org.apache.sling.resourceresolver/1.6.0/org.apache.sling.resourceresolver-1.6.0.jar"/>
+                <bundle category="sling" id="139">Apache Sling Resource Resolver</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.sample.slingshot" classifier="slingfeature" groupId="org.apache.sling" type="slingfeature" version="0.8.1-SNAPSHOT">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:27" repositoryPath="org/apache/sling/org.apache.sling.sample.slingshot/0.8.1-SNAPSHOT/org.apache.sling.sample.slingshot-0.8.1-SNAPSHOT-slingfeature.slingfeature"/>
+                <bundle category="sling" id="140">Apache Sling Sample Slingshot</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.api" groupId="org.apache.sling" type="jar" version="2.2.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:23" repositoryPath="org/apache/sling/org.apache.sling.scripting.api/2.2.0/org.apache.sling.scripting.api-2.2.0.jar"/>
+                <bundle category="sling" id="141">Apache Sling Scripting Implementation API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.core" groupId="org.apache.sling" type="jar" version="2.0.54">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:24" repositoryPath="org/apache/sling/org.apache.sling.scripting.core/2.0.54/org.apache.sling.scripting.core-2.0.54.jar"/>
+                <bundle category="sling" id="142">Apache Sling Scripting Core implementation</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.el-api" groupId="org.apache.sling" type="jar" version="1.0.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:28" repositoryPath="org/apache/sling/org.apache.sling.scripting.el-api/1.0.0/org.apache.sling.scripting.el-api-1.0.0.jar"/>
+                <bundle category="sling" id="143">Apache Sling Wrapper Bundle for Apache Tomcat EL API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.javascript" groupId="org.apache.sling" type="jar" version="3.0.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:25" repositoryPath="org/apache/sling/org.apache.sling.scripting.javascript/3.0.4/org.apache.sling.scripting.javascript-3.0.4.jar"/>
+                <bundle category="sling" id="144">Apache Sling Scripting JavaScript Support</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.jsp-api" groupId="org.apache.sling" type="jar" version="1.0.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:27" repositoryPath="org/apache/sling/org.apache.sling.scripting.jsp-api/1.0.0/org.apache.sling.scripting.jsp-api-1.0.0.jar"/>
+                <bundle category="sling" id="146">Apache Sling Wrapper Bundle for Apache Tomcat JSP API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.jsp.taglib" groupId="org.apache.sling" type="jar" version="2.2.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:29" repositoryPath="org/apache/sling/org.apache.sling.scripting.jsp.taglib/2.2.6/org.apache.sling.scripting.jsp.taglib-2.2.6.jar"/>
+                <bundle category="sling" id="147">Apache Sling JSP Tag Library</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.jsp" groupId="org.apache.sling" type="jar" version="2.3.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:26" repositoryPath="org/apache/sling/org.apache.sling.scripting.jsp/2.3.4/org.apache.sling.scripting.jsp-2.3.4.jar"/>
+                <bundle category="sling" id="145">Apache Sling Scripting JSP Support</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.sightly.compiler.java" groupId="org.apache.sling" type="jar" version="1.0.18">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:32" repositoryPath="org/apache/sling/org.apache.sling.scripting.sightly.compiler.java/1.0.18/org.apache.sling.scripting.sightly.compiler.java-1.0.18.jar"/>
+                <bundle category="sling" id="150">Apache Sling Scripting HTL Java Compiler</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.sightly.compiler" groupId="org.apache.sling" type="jar" version="1.0.16">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:31" repositoryPath="org/apache/sling/org.apache.sling.scripting.sightly.compiler/1.0.16/org.apache.sling.scripting.sightly.compiler-1.0.16.jar"/>
+                <bundle category="sling" id="149">Apache Sling Scripting HTL Compiler</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.sightly.js.provider" groupId="org.apache.sling" type="jar" version="1.0.26">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:33" repositoryPath="org/apache/sling/org.apache.sling.scripting.sightly.js.provider/1.0.26/org.apache.sling.scripting.sightly.js.provider-1.0.26.jar"/>
+                <bundle category="sling" id="151">Apache Sling Scripting HTL JavaScript Use Provider</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.sightly.models.provider" groupId="org.apache.sling" type="jar" version="1.0.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:34" repositoryPath="org/apache/sling/org.apache.sling.scripting.sightly.models.provider/1.0.6/org.apache.sling.scripting.sightly.models.provider-1.0.6.jar"/>
+                <bundle category="sling" id="152">Apache Sling Scripting HTL Sling Models Use Provider</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.sightly.repl" groupId="org.apache.sling" type="jar" version="1.0.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:35" repositoryPath="org/apache/sling/org.apache.sling.scripting.sightly.repl/1.0.4/org.apache.sling.scripting.sightly.repl-1.0.4.jar"/>
+                <bundle category="sling" id="153">Apache Sling Scripting HTL Read-Eval-Print Loop Environment</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.scripting.sightly" groupId="org.apache.sling" type="jar" version="1.0.46">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\scripting.txt:30" repositoryPath="org/apache/sling/org.apache.sling.scripting.sightly/1.0.46/org.apache.sling.scripting.sightly-1.0.46.jar"/>
+                <bundle category="sling" id="148">Apache Sling Scripting HTL Engine</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.serviceuser.webconsole" groupId="org.apache.sling" type="jar" version="1.0.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:64" repositoryPath="org/apache/sling/org.apache.sling.serviceuser.webconsole/1.0.0/org.apache.sling.serviceuser.webconsole-1.0.0.jar"/>
+                <bundle category="sling" id="154">Apache Sling Service User Web Console</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.serviceusermapper" groupId="org.apache.sling" type="jar" version="1.4.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:63" repositoryPath="org/apache/sling/org.apache.sling.serviceusermapper/1.4.0/org.apache.sling.serviceusermapper-1.4.0.jar"/>
+                <bundle category="sling" id="155">Apache Sling Service User Mapper</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.servlets.get" groupId="org.apache.sling" type="jar" version="2.1.30">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:65" repositoryPath="org/apache/sling/org.apache.sling.servlets.get/2.1.30/org.apache.sling.servlets.get-2.1.30.jar"/>
+                <bundle category="sling" id="156">Apache Sling Default GET Servlets</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.servlets.post" groupId="org.apache.sling" type="jar" version="2.3.24">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:66" repositoryPath="org/apache/sling/org.apache.sling.servlets.post/2.3.24/org.apache.sling.servlets.post-2.3.24.jar"/>
+                <bundle category="sling" id="157">Apache Sling Default POST Servlets</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.servlets.resolver" groupId="org.apache.sling" type="jar" version="2.4.22">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:67" repositoryPath="org/apache/sling/org.apache.sling.servlets.resolver/2.4.22/org.apache.sling.servlets.resolver-2.4.22.jar"/>
+                <bundle category="sling" id="158">Apache Sling Servlet Resolver</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.xss" groupId="org.apache.sling" type="jar" version="2.0.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:68" repositoryPath="org/apache/sling/org.apache.sling.xss/2.0.4/org.apache.sling.xss-2.0.4.jar"/>
+                <bundle category="sling" id="161">Apache Sling XSS Protection</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+          <artifactGroup level="5">
+            <artifacts>
+              <artifact artifactId="commons-fileupload" groupId="commons-fileupload" type="jar" version="1.3.3">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:93" repositoryPath="commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.jar"/>
+                <bundle id="19">Apache Commons FileUpload</bundle>
+              </artifact>
+              <artifact artifactId="commons-io" groupId="commons-io" type="jar" version="2.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:92" repositoryPath="commons-io/commons-io/2.6/commons-io-2.6.jar"/>
+                <bundle id="20">Apache Commons IO</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.aries.jmx.api" groupId="org.apache.aries.jmx" type="jar" version="1.1.5">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:89" repositoryPath="org/apache/aries/jmx/org.apache.aries.jmx.api/1.1.5/org.apache.aries.jmx.api-1.1.5.jar"/>
+                <bundle id="21">Apache Aries JMX API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.aries.jmx.core" groupId="org.apache.aries.jmx" type="jar" version="1.1.8">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:90" repositoryPath="org/apache/aries/jmx/org.apache.aries.jmx.core/1.1.8/org.apache.aries.jmx.core-1.1.8.jar"/>
+                <bundle id="22">Apache Aries JMX Core</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.aries.jmx.whiteboard" groupId="org.apache.aries.jmx" type="jar" version="1.2.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:91" repositoryPath="org/apache/aries/jmx/org.apache.aries.jmx.whiteboard/1.2.0/org.apache.aries.jmx.whiteboard-1.2.0.jar"/>
+                <bundle id="23">Apache Aries Whiteboard support for JMX DynamicMBean services</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.bundlerepository" groupId="org.apache.felix" type="jar" version="2.0.10">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:87" repositoryPath="org/apache/felix/org.apache.felix.bundlerepository/2.0.10/org.apache.felix.bundlerepository-2.0.10.jar"/>
+                <bundle id="24">Apache Felix Bundle Repository</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.inventory" groupId="org.apache.felix" type="jar" version="1.0.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:78" repositoryPath="org/apache/felix/org.apache.felix.inventory/1.0.6/org.apache.felix.inventory-1.0.6.jar"/>
+                <bundle category="osgi" id="27">Apache Felix Inventory</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.prefs" groupId="org.apache.felix" type="jar" version="1.1.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:79" repositoryPath="org/apache/felix/org.apache.felix.prefs/1.1.0/org.apache.felix.prefs-1.1.0.jar"/>
+                <bundle category="osgi" id="28">Apache Felix Preferences Service</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.webconsole.plugins.ds" groupId="org.apache.felix" type="jar" version="2.0.8">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:81" repositoryPath="org/apache/felix/org.apache.felix.webconsole.plugins.ds/2.0.8/org.apache.felix.webconsole.plugins.ds-2.0.8.jar"/>
+                <bundle id="30">Apache Felix Web Console Service Component Runtime/Declarative Services Plugin</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.webconsole.plugins.event" groupId="org.apache.felix" type="jar" version="1.1.8">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:84" repositoryPath="org/apache/felix/org.apache.felix.webconsole.plugins.event/1.1.8/org.apache.felix.webconsole.plugins.event-1.1.8.jar"/>
+                <bundle id="31">Apache Felix Web Console Event Plugin</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.webconsole.plugins.memoryusage" groupId="org.apache.felix" type="jar" version="1.0.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:85" repositoryPath="org/apache/felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.6/org.apache.felix.webconsole.plugins.memoryusage-1.0.6.jar"/>
+                <bundle id="32">Apache Felix Web Console Memory Usage Plugin</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.webconsole.plugins.obr" groupId="org.apache.felix" type="jar" version="1.0.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:82" repositoryPath="org/apache/felix/org.apache.felix.webconsole.plugins.obr/1.0.4/org.apache.felix.webconsole.plugins.obr-1.0.4.jar"/>
+                <bundle id="33">Apache Felix Web Console OBR Plugin</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.webconsole.plugins.packageadmin" groupId="org.apache.felix" type="jar" version="1.0.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:83" repositoryPath="org/apache/felix/org.apache.felix.webconsole.plugins.packageadmin/1.0.4/org.apache.felix.webconsole.plugins.packageadmin-1.0.4.jar"/>
+                <bundle id="34">Apache Felix Web Console Package Admin Service Plugin</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.webconsole" groupId="org.apache.felix" type="jar" version="4.3.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:80" repositoryPath="org/apache/felix/org.apache.felix.webconsole/4.3.4/org.apache.felix.webconsole-4.3.4.jar"/>
+                <bundle id="29">Apache Felix Web Management Console</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.commons.johnzon" groupId="org.apache.sling" type="jar" version="1.1.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:86" repositoryPath="org/apache/sling/org.apache.sling.commons.johnzon/1.1.0/org.apache.sling.commons.johnzon-1.1.0.jar"/>
+                <bundle category="sling" id="35">Apache Johnzon Wrapper Library</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.commons.log.webconsole" groupId="org.apache.sling" type="jar" version="1.0.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:94" repositoryPath="org/apache/sling/org.apache.sling.commons.log.webconsole/1.0.0/org.apache.sling.commons.log.webconsole-1.0.0.jar"/>
+                <bundle category="sling" id="36">Apache Sling Log WebConsole</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.extensions.threaddump" groupId="org.apache.sling" type="jar" version="0.2.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:88" repositoryPath="org/apache/sling/org.apache.sling.extensions.threaddump/0.2.2/org.apache.sling.extensions.threaddump-0.2.2.jar"/>
+                <bundle category="sling" id="37">Apache Sling Thread Dumper</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.extensions.webconsolebranding" groupId="org.apache.sling" type="jar" version="1.0.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:76" repositoryPath="org/apache/sling/org.apache.sling.extensions.webconsolebranding/1.0.2/org.apache.sling.extensions.webconsolebranding-1.0.2.jar"/>
+                <bundle category="sling" id="38">Apache Sling Web Console Branding</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.extensions.webconsolesecurityprovider" groupId="org.apache.sling" type="jar" version="1.0.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:77" repositoryPath="org/apache/sling/org.apache.sling.extensions.webconsolesecurityprovider/1.0.0/org.apache.sling.extensions.webconsolesecurityprovider-1.0.0.jar"/>
+                <bundle category="sling" id="39">Apache Sling Web Console Security Provider</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.starter.content" groupId="org.apache.sling" type="jar" version="1.0.0-SNAPSHOT">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:74" repositoryPath="org/apache/sling/org.apache.sling.starter.content/1.0.0-SNAPSHOT/org.apache.sling.starter.content-1.0.0-SNAPSHOT.jar"/>
+                <bundle category="sling" id="40">Apache Sling Starter Content</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.starter.startup" groupId="org.apache.sling" type="jar" version="1.0.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:75" repositoryPath="org/apache/sling/org.apache.sling.starter.startup/1.0.4/org.apache.sling.starter.startup-1.0.4.jar"/>
+                <bundle category="sling" id="41">Apache Sling Starter Startup Module</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+          <artifactGroup level="10">
+            <artifacts>
+              <artifact artifactId="org.apache.felix.http.sslfilter" groupId="org.apache.felix" type="jar" version="1.2.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:97" repositoryPath="org/apache/felix/org.apache.felix.http.sslfilter/1.2.4/org.apache.felix.http.sslfilter-1.2.4.jar"/>
+                <bundle id="44">Apache Felix Http SSL Filter</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.metatype" groupId="org.apache.felix" type="jar" version="1.1.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:99" repositoryPath="org/apache/felix/org.apache.felix.metatype/1.1.6/org.apache.felix.metatype-1.1.6.jar"/>
+                <bundle category="osgi" id="46">Apache Felix Metatype Service</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.scr" groupId="org.apache.felix" type="jar" version="2.0.14">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:98" repositoryPath="org/apache/felix/org.apache.felix.scr/2.0.14/org.apache.felix.scr-2.0.14.jar"/>
+                <bundle category="osgi" id="47">Apache Felix Declarative Services</bundle>
+              </artifact>
+              <artifact artifactId="fontbox" groupId="org.apache.pdfbox" type="jar" version="2.0.8">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:101" repositoryPath="org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.jar"/>
+                <bundle id="42">Apache FontBox</bundle>
+              </artifact>
+              <artifact artifactId="jempbox" groupId="org.apache.pdfbox" type="jar" version="1.8.13">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:102" repositoryPath="org/apache/pdfbox/jempbox/1.8.13/jempbox-1.8.13.jar"/>
+                <bundle id="43">Apache JempBox</bundle>
+              </artifact>
+              <artifact artifactId="pdfbox" groupId="org.apache.pdfbox" type="jar" version="2.0.8">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:100" repositoryPath="org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.jar"/>
+                <bundle id="48">Apache PDFBox</bundle>
+              </artifact>
+              <artifact artifactId="tika-core" groupId="org.apache.tika" type="jar" version="1.17">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:103" repositoryPath="org/apache/tika/tika-core/1.17/tika-core-1.17.jar"/>
+                <bundle id="49">Apache Tika core</bundle>
+              </artifact>
+              <artifact artifactId="tika-parsers" groupId="org.apache.tika" type="jar" version="1.17">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:104" repositoryPath="org/apache/tika/tika-parsers/1.17/tika-parsers-1.17.jar"/>
+                <bundle id="50">Apache Tika parsers</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+          <artifactGroup level="15">
+            <artifacts>
+              <artifact artifactId="guava" groupId="com.google.guava" type="jar" version="15.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:125" repositoryPath="com/google/guava/guava/15.0/guava-15.0.jar"/>
+                <bundle id="52">Guava: Google Core Libraries for Java</bundle>
+              </artifact>
+              <artifact artifactId="metrics-core" groupId="io.dropwizard.metrics" type="jar" version="3.2.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:123" repositoryPath="io/dropwizard/metrics/metrics-core/3.2.6/metrics-core-3.2.6.jar"/>
+                <bundle id="60">Metrics Core</bundle>
+              </artifact>
+              <artifact artifactId="jackrabbit-api" groupId="org.apache.jackrabbit" type="jar" version="${jackrabbit.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:111" repositoryPath="org/apache/jackrabbit/jackrabbit-api/${jackrabbit.version}/jackrabbit-api-${jackrabbit.version}.jar"/>
+                <bundle category="jcr,jackrabbit'" id="53">Apache Jackrabbit API</bundle>
+              </artifact>
+              <artifact artifactId="jackrabbit-data" groupId="org.apache.jackrabbit" type="jar" version="${jackrabbit.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:117" repositoryPath="org/apache/jackrabbit/jackrabbit-data/${jackrabbit.version}/jackrabbit-data-${jackrabbit.version}.jar"/>
+                <bundle category="jcr,jackrabbit'" id="54">Jackrabbit Data</bundle>
+              </artifact>
+              <artifact artifactId="jackrabbit-jcr-commons" groupId="org.apache.jackrabbit" type="jar" version="${jackrabbit.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:112" repositoryPath="org/apache/jackrabbit/jackrabbit-jcr-commons/${jackrabbit.version}/jackrabbit-jcr-commons-${jackrabbit.version}.jar"/>
+                <bundle category="jcr,jackrabbit'" id="55">Jackrabbit JCR Commons</bundle>
+              </artifact>
+              <artifact artifactId="jackrabbit-jcr-rmi" groupId="org.apache.jackrabbit" type="jar" version="${jackrabbit.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:116" repositoryPath="org/apache/jackrabbit/jackrabbit-jcr-rmi/${jackrabbit.version}/jackrabbit-jcr-rmi-${jackrabbit.version}.jar"/>
+                <bundle category="jcr,jackrabbit'" id="56">Jackrabbit JCR-RMI</bundle>
+              </artifact>
+              <artifact artifactId="jackrabbit-spi-commons" groupId="org.apache.jackrabbit" type="jar" version="${jackrabbit.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:114" repositoryPath="org/apache/jackrabbit/jackrabbit-spi-commons/${jackrabbit.version}/jackrabbit-spi-commons-${jackrabbit.version}.jar"/>
+                <bundle category="jcr,jackrabbit'" id="58">Jackrabbit SPI Commons</bundle>
+              </artifact>
+              <artifact artifactId="jackrabbit-spi" groupId="org.apache.jackrabbit" type="jar" version="${jackrabbit.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:113" repositoryPath="org/apache/jackrabbit/jackrabbit-spi/${jackrabbit.version}/jackrabbit-spi-${jackrabbit.version}.jar"/>
+                <bundle category="jcr,jackrabbit'" id="57">Jackrabbit SPI</bundle>
+              </artifact>
+              <artifact artifactId="jackrabbit-webdav" groupId="org.apache.jackrabbit" type="jar" version="${jackrabbit.version}">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:115" repositoryPath="org/apache/jackrabbit/jackrabbit-webdav/${jackrabbit.version}/jackrabbit-webdav-${jackrabbit.version}.jar"/>
+                <bundle category="jcr,jackrabbit'" id="59">Jackrabbit WebDAV Library</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.commons.metrics" groupId="org.apache.sling" type="jar" version="1.2.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:124" repositoryPath="org/apache/sling/org.apache.sling.commons.metrics/1.2.4/org.apache.sling.commons.metrics-1.2.4.jar"/>
+                <bundle category="sling" id="66">Apache Sling Metrics</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.jcr.api" groupId="org.apache.sling" type="jar" version="2.4.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:108" repositoryPath="org/apache/sling/org.apache.sling.jcr.api/2.4.0/org.apache.sling.jcr.api-2.4.0.jar"/>
+                <bundle category="sling,jcr,jackrabbit'" id="67">Apache Sling Repository API Bundle</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.jcr.base" groupId="org.apache.sling" type="jar" version="3.0.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:109" repositoryPath="org/apache/sling/org.apache.sling.jcr.base/3.0.4/org.apache.sling.jcr.base-3.0.4.jar"/>
+                <bundle category="sling,jcr,jackrabbit'" id="68">Apache Sling JCR Base Bundle</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.jcr.davex" groupId="org.apache.sling" type="jar" version="1.3.10">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:119" repositoryPath="org/apache/sling/org.apache.sling.jcr.davex/1.3.10/org.apache.sling.jcr.davex-1.3.10.jar"/>
+                <bundle category="sling,jcr'" id="69">Apache Sling JCR DavEx</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.jcr.jackrabbit.accessmanager" groupId="org.apache.sling" type="jar" version="3.0.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:121" repositoryPath="org/apache/sling/org.apache.sling.jcr.jackrabbit.accessmanager/3.0.0/org.apache.sling.jcr.jackrabbit.accessmanager-3.0.0.jar"/>
+                <bundle category="sling" id="70">Apache Sling Jackrabbit JSR-283 Access Control Manager Support</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.jcr.jackrabbit.usermanager" groupId="org.apache.sling" type="jar" version="2.2.6">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:120" repositoryPath="org/apache/sling/org.apache.sling.jcr.jackrabbit.usermanager/2.2.6/org.apache.sling.jcr.jackrabbit.usermanager-2.2.6.jar"/>
+                <bundle category="sling" id="71">Apache Sling Jackrabbit UserManager Support</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.jcr.jcr-wrapper" groupId="org.apache.sling" type="jar" version="2.0.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:107" repositoryPath="org/apache/sling/org.apache.sling.jcr.jcr-wrapper/2.0.0/org.apache.sling.jcr.jcr-wrapper-2.0.0.jar"/>
+                <bundle category="sling" id="72">Apache Sling Wrapper Bundle for the JCR API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.jcr.registration" groupId="org.apache.sling" type="jar" version="1.0.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:110" repositoryPath="org/apache/sling/org.apache.sling.jcr.registration/1.0.4/org.apache.sling.jcr.registration-1.0.4.jar"/>
+                <bundle category="sling,jcr'" id="73">Apache Sling JCR Repository Registration</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.jcr.webconsole" groupId="org.apache.sling" type="jar" version="1.0.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:122" repositoryPath="org/apache/sling/org.apache.sling.jcr.webconsole/1.0.2/org.apache.sling.jcr.webconsole-1.0.2.jar"/>
+                <bundle category="sling,jcr'" id="74">Apache Sling JCR WebConsole Bundle</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.jcr.webdav" groupId="org.apache.sling" type="jar" version="2.3.8">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling.txt:118" repositoryPath="org/apache/sling/org.apache.sling.jcr.webdav/2.3.8/org.apache.sling.jcr.webdav-2.3.8.jar"/>
+                <bundle category="sling,jcr'" id="75">Apache Sling Simple WebDAV Access to repositories</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+        <configurations>
+          <configuration factoryPid="" location="" pid="org.apache.sling.commons.log.LogManager">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="" location="" pid="org.apache.sling.engine.impl.log.RequestLogger">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="" location="" pid="org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="" location="" pid="org.apache.sling.jcr.webdav.impl.servlets.SimpleWebDavServlet">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="" location="" pid="org.apache.sling.scripting.core.impl.ScriptCacheImpl">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.commons.log.LogManager.factory.config" location="" pid="access.log">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.commons.log.LogManager.factory.config" location="" pid="request.log">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment" location="" pid="sling">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended" location="" pid="i18n">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended" location="" pid="jcr-install">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended" location="" pid="jcr-resource">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended" location="" pid="observation">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended" location="" pid="resourceresolver">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended" location="" pid="scripting">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended" location="" pid="servletsresolver">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended" location="" pid="xss">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+        </configurations>
+      </runMode>
+    </runModes>
+    <additionalSections>
+      <section name="repoinit">
+        <contents>#&lt;&lt;&lt; SLING-5848 - Define service user and ACLs for Scripting
+create service user sling-scripting
+
+create path (sling:Folder) /libs
+create path (sling:Folder) /apps
+
+set ACL for sling-scripting
+deny    jcr:all     on /
+allow   jcr:read    on /libs,/apps
+end
+# SLING-5848 - Define service user and ACLs for Scripting &gt;&gt;&gt;
+
+</contents>
+      </section>
+    </additionalSections>
+  </feature>
+  <feature name="sling-event" type="plain">
+    <runModes>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="0">
+            <artifacts>
+              <artifact artifactId="org.apache.sling.discovery.api" groupId="org.apache.sling" type="jar" version="1.0.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-discovery.txt:23" repositoryPath="org/apache/sling/org.apache.sling.discovery.api/1.0.4/org.apache.sling.discovery.api-1.0.4.jar"/>
+                <bundle category="sling" id="115">Apache Sling Discovery API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.discovery.base" groupId="org.apache.sling" type="jar" version="2.0.8">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-discovery.txt:26" repositoryPath="org/apache/sling/org.apache.sling.discovery.base/2.0.8/org.apache.sling.discovery.base-2.0.8.jar"/>
+                <bundle category="sling" id="116">Apache Sling Discovery Base</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.discovery.commons" groupId="org.apache.sling" type="jar" version="1.0.20">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-discovery.txt:25" repositoryPath="org/apache/sling/org.apache.sling.discovery.commons/1.0.20/org.apache.sling.discovery.commons-1.0.20.jar"/>
+                <bundle category="sling" id="117">Apache Sling Discovery Commons</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.discovery.oak" groupId="org.apache.sling" type="jar" version="1.2.22">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-discovery.txt:27" repositoryPath="org/apache/sling/org.apache.sling.discovery.oak/1.2.22/org.apache.sling.discovery.oak-1.2.22.jar"/>
+                <bundle category="sling" id="118">Apache Sling Oak-Based Discovery Service</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.discovery.support" groupId="org.apache.sling" type="jar" version="1.0.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-discovery.txt:24" repositoryPath="org/apache/sling/org.apache.sling.discovery.support/1.0.4/org.apache.sling.discovery.support-1.0.4.jar"/>
+                <bundle category="sling" id="119">Apache Sling Discovery Support Bundle</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.event.dea" groupId="org.apache.sling" type="jar" version="1.1.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-event.txt:24" repositoryPath="org/apache/sling/org.apache.sling.event.dea/1.1.2/org.apache.sling.event.dea-1.1.2.jar"/>
+                <bundle category="sling" id="122">Apache Sling Distributed Event Admin</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.event" groupId="org.apache.sling" type="jar" version="4.2.10">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-event.txt:23" repositoryPath="org/apache/sling/org.apache.sling.event/4.2.10/org.apache.sling.event-4.2.10.jar"/>
+                <bundle category="sling" id="121">Apache Sling Event Support</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+        <configurations>
+          <configuration factoryPid="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended" location="" pid="sling.discovery">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended" location="" pid="sling.event">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+        </configurations>
+      </runMode>
+    </runModes>
+    <additionalSections>
+      <section name="repoinit">
+        <contents>create service user sling-discovery
+
+create path (sling:Folder) /var/discovery
+create path (sling:Folder) /var/discovery/oak
+
+set ACL for sling-discovery
+allow   jcr:read,rep:write    on /var/discovery
+end
+
+</contents>
+      </section>
+      <section name="repoinit">
+        <contents>create service user sling-event
+
+create path (sling:Folder) /var
+create path (sling:Folder) /var/eventing
+
+set ACL for sling-event
+allow   jcr:read,rep:write    on /var/eventing
+end
+
+</contents>
+      </section>
+    </additionalSections>
+  </feature>
+  <feature name="sling-validation" type="plain">
+    <runModes>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="0">
+            <artifacts>
+              <artifact artifactId="org.apache.sling.caconfig.api" groupId="org.apache.sling" type="jar" version="1.1.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-caconfig.txt:23" repositoryPath="org/apache/sling/org.apache.sling.caconfig.api/1.1.0/org.apache.sling.caconfig.api-1.1.0.jar"/>
+                <bundle category="sling" id="105">Apache Sling Context-Aware Configuration API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.caconfig.impl" groupId="org.apache.sling" type="jar" version="1.4.10">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-caconfig.txt:25" repositoryPath="org/apache/sling/org.apache.sling.caconfig.impl/1.4.10/org.apache.sling.caconfig.impl-1.4.10.jar"/>
+                <bundle category="sling" id="106">Apache Sling Context-Aware Configuration Implementation</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.caconfig.spi" groupId="org.apache.sling" type="jar" version="1.3.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-caconfig.txt:24" repositoryPath="org/apache/sling/org.apache.sling.caconfig.spi/1.3.2/org.apache.sling.caconfig.spi-1.3.2.jar"/>
+                <bundle category="sling" id="107">Apache Sling Context-Aware Configuration SPI</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.validation.api" groupId="org.apache.sling" type="jar" version="1.0.0">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-validation.txt:23" repositoryPath="org/apache/sling/org.apache.sling.validation.api/1.0.0/org.apache.sling.validation.api-1.0.0.jar"/>
+                <bundle category="sling" id="159">Apache Sling Validation Framework API</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.sling.validation.core" groupId="org.apache.sling" type="jar" version="1.0.4">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\sling-validation.txt:24" repositoryPath="org/apache/sling/org.apache.sling.validation.core/1.0.4/org.apache.sling.validation.core-1.0.4.jar"/>
+                <bundle category="sling" id="160">Apache Sling Validation Framework Core Implementation</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+        <configurations>
+          <configuration factoryPid="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended" location="" pid="sling-caconfig">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+          <configuration factoryPid="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended" location="" pid="validation">
+            <properties>
+              <property key=":rawconfig.format" value="felixca"/>
+            </properties>
+          </configuration>
+        </configurations>
+      </runMode>
+    </runModes>
+    <additionalSections>
+      <section name="repoinit">
+        <contents>create path (sling:Folder) /conf
+</contents>
+      </section>
+      <section name="repoinit">
+        <contents>create service user sling-validation
+
+create path (sling:Folder) /apps
+create path (sling:Folder) /libs
+
+set ACL for sling-validation
+allow   jcr:read    on /apps
+allow   jcr:read    on /libs
+end
+</contents>
+      </section>
+    </additionalSections>
+  </feature>
+  <feature name="standalone" type="plain">
+    <runModes>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="5">
+            <artifacts>
+              <artifact artifactId="org.apache.felix.http.jetty" groupId="org.apache.felix" type="jar" version="3.4.8">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\standalone.txt:26" repositoryPath="org/apache/felix/org.apache.felix.http.jetty/3.4.8/org.apache.felix.http.jetty-3.4.8.jar"/>
+                <bundle id="25">Apache Felix Http Jetty</bundle>
+              </artifact>
+              <artifact artifactId="org.apache.felix.http.servlet-api" groupId="org.apache.felix" type="jar" version="1.1.2">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\standalone.txt:25" repositoryPath="org/apache/felix/org.apache.felix.http.servlet-api/1.1.2/org.apache.felix.http.servlet-api-1.1.2.jar"/>
+                <bundle id="26">Apache Felix Servlet API</bundle>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+        <names>
+          <name>:standalone</name>
+        </names>
+      </runMode>
+    </runModes>
+  </feature>
+  <feature name="webapp" type="plain">
+    <runModes>
+      <runMode>
+        <artifactGroups>
+          <artifactGroup level="0">
+            <artifacts>
+              <artifact artifactId="org.apache.felix.http.bridge" groupId="org.apache.felix" type="jar" version="3.0.18">
+                <reference location="C:\Users\Petre\sling_git\org-apache-sling-starter\src\main\provisioning\webapp.txt:25" repositoryPath="org/apache/felix/org.apache.felix.http.bridge/3.0.18/org.apache.felix.http.bridge-3.0.18.jar"/>
+              </artifact>
+            </artifacts>
+          </artifactGroup>
+        </artifactGroups>
+        <names>
+          <name>:webapp</name>
+        </names>
+      </runMode>
+    </runModes>
+  </feature>
+</model>

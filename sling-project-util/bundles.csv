@@ -1,0 +1,164 @@
+0,System Bundle,org.apache.felix.framework,5.6.10
+1,Apache Geronimo JSR-330 Spec API,org.apache.geronimo.specs.geronimo-atinject_1.0_spec,1.0
+2,jcl-over-slf4j,jcl.over.slf4j,1.7.25
+3,log4j-over-slf4j,log4j.over.slf4j,1.7.25
+4,Apache Aries Util,org.apache.aries.util,1.1.3
+5,Apache Felix Configuration Admin Service,org.apache.felix.configadmin,1.8.16,osgi
+6,Apache Felix EventAdmin,org.apache.felix.eventadmin,1.4.10
+7,Apache Sling Commons Log,org.apache.sling.commons.log,5.1.0,sling
+8,Apache Sling OSGi LogService Implementation,org.apache.sling.commons.logservice,1.0.6,sling
+9,Apache Sling System Bundle Extension: Java Transaction API,org.apache.sling.fragment.transaction,1.0.0,sling
+10,Apache Sling System Bundle Extension: WS APIs,org.apache.sling.fragment.ws,1.0.2,sling
+11,Apache Sling System Bundle Extension: XML APIs,org.apache.sling.fragment.xml,1.0.2,sling
+12,Apache Sling Installer,org.apache.sling.installer.core,3.8.12,sling
+13,Apache Sling Installer Configuration Admin Support,org.apache.sling.installer.factory.configuration,1.1.2,sling
+14,Apache Sling File Installer,org.apache.sling.installer.provider.file,1.1.0,sling
+15,Apache Sling javax.activation bundle,org.apache.sling.javax.activation,0.1.0,sling
+16,Apache Sling Launchpad Installer,org.apache.sling.launchpad.installer,1.2.2,sling
+17,Apache Sling Settings,org.apache.sling.settings,1.3.8,sling
+18,slf4j-api,slf4j.api,1.7.25
+19,Apache Commons FileUpload,org.apache.commons.fileupload,1.3.3
+20,Apache Commons IO,org.apache.commons.io,2.6.0
+21,Apache Aries JMX API,org.apache.aries.jmx.api,1.1.5
+22,Apache Aries JMX Core,org.apache.aries.jmx.core,1.1.8
+23,Apache Aries Whiteboard support for JMX DynamicMBean services,org.apache.aries.jmx.whiteboard,1.2.0
+24,Apache Felix Bundle Repository,org.apache.felix.bundlerepository,2.0.10
+25,Apache Felix Http Jetty,org.apache.felix.http.jetty,3.4.8
+26,Apache Felix Servlet API,org.apache.felix.http.servlet-api,1.1.2
+27,Apache Felix Inventory,org.apache.felix.inventory,1.0.6,osgi
+28,Apache Felix Preferences Service,org.apache.felix.prefs,1.1.0,osgi
+29,Apache Felix Web Management Console,org.apache.felix.webconsole,4.3.4
+30,Apache Felix Web Console Service Component Runtime/Declarative Services Plugin,org.apache.felix.webconsole.plugins.ds,2.0.8
+31,Apache Felix Web Console Event Plugin,org.apache.felix.webconsole.plugins.event,1.1.8
+32,Apache Felix Web Console Memory Usage Plugin,org.apache.felix.webconsole.plugins.memoryusage,1.0.6
+33,Apache Felix Web Console OBR Plugin,org.apache.felix.webconsole.plugins.obr,1.0.4
+34,Apache Felix Web Console Package Admin Service Plugin,org.apache.felix.webconsole.plugins.packageadmin,1.0.4
+35,Apache Johnzon Wrapper Library,org.apache.sling.commons.johnzon,1.1.0,sling
+36,Apache Sling Log WebConsole,org.apache.sling.commons.log.webconsole,1.0.0,sling
+37,Apache Sling Thread Dumper,org.apache.sling.extensions.threaddump,0.2.2,sling
+38,Apache Sling Web Console Branding,org.apache.sling.extensions.webconsolebranding,1.0.2,sling
+39,Apache Sling Web Console Security Provider,org.apache.sling.extensions.webconsolesecurityprovider,1.0.0,sling
+40,Apache Sling Starter Content,org.apache.sling.starter.content,1.0.0.SNAPSHOT,sling
+41,Apache Sling Starter Startup Module,org.apache.sling.starter.startup,1.0.4,sling
+42,Apache FontBox,org.apache.pdfbox.fontbox,2.0.8
+43,Apache JempBox,org.apache.pdfbox.jempbox,1.8.13
+44,Apache Felix Http SSL Filter,org.apache.felix.http.sslfilter,1.2.4
+45,Apache Felix JAAS Support,org.apache.felix.jaas,1.0.2
+46,Apache Felix Metatype Service,org.apache.felix.metatype,1.1.6,osgi
+47,Apache Felix Declarative Services,org.apache.felix.scr,2.0.14,osgi
+48,Apache PDFBox,org.apache.pdfbox,2.0.8
+49,Apache Tika core,org.apache.tika.core,1.17.0
+50,Apache Tika parsers,org.apache.tika.parsers,1.17.0
+51,Oak Segment Tar,org.apache.jackrabbit.oak-segment-tar,1.6.8,oak
+52,Guava: Google Core Libraries for Java,com.google.guava,15.0.0
+53,Apache Jackrabbit API,org.apache.jackrabbit.jackrabbit-api,2.14.4,'jcr,jackrabbit'
+54,Jackrabbit Data,org.apache.jackrabbit.jackrabbit-data,2.14.4,'jcr,jackrabbit'
+55,Jackrabbit JCR Commons,org.apache.jackrabbit.jackrabbit-jcr-commons,2.14.4,'jcr,jackrabbit'
+56,Jackrabbit JCR-RMI,org.apache.jackrabbit.jackrabbit-jcr-rmi,2.14.4,'jcr,jackrabbit'
+57,Jackrabbit SPI,org.apache.jackrabbit.jackrabbit-spi,2.14.4,'jcr,jackrabbit'
+58,Jackrabbit SPI Commons,org.apache.jackrabbit.jackrabbit-spi-commons,2.14.4,'jcr,jackrabbit'
+59,Jackrabbit WebDAV Library,org.apache.jackrabbit.jackrabbit-webdav,2.14.4,'jcr,jackrabbit'
+60,Metrics Core,io.dropwizard.metrics.core,3.2.6
+61,Oak Blob Store,org.apache.jackrabbit.oak-blob,1.6.8,oak
+62,Oak Commons,org.apache.jackrabbit.oak-commons,1.6.8,oak
+63,Oak Core,org.apache.jackrabbit.oak-core,1.6.8,oak
+64,Oak JCR Binding,org.apache.jackrabbit.oak-jcr,1.6.8,oak
+65,Oak Lucene,org.apache.jackrabbit.oak-lucene,1.6.8,oak
+66,Apache Sling Metrics,org.apache.sling.commons.metrics,1.2.4,sling
+67,Apache Sling Repository API Bundle,org.apache.sling.jcr.api,2.4.0,'sling,jcr,jackrabbit'
+68,Apache Sling JCR Base Bundle,org.apache.sling.jcr.base,3.0.4,'sling,jcr,jackrabbit'
+69,Apache Sling JCR DavEx,org.apache.sling.jcr.davex,1.3.10,'sling,jcr'
+70,Apache Sling Jackrabbit JSR-283 Access Control Manager Support,org.apache.sling.jcr.jackrabbit.accessmanager,3.0.0,sling
+71,Apache Sling Jackrabbit UserManager Support,org.apache.sling.jcr.jackrabbit.usermanager,2.2.6,sling
+72,Apache Sling Wrapper Bundle for the JCR API,org.apache.sling.jcr.jcr-wrapper,2.0.0,sling
+73,Apache Sling JCR Repository Registration,org.apache.sling.jcr.registration,1.0.4,'sling,jcr'
+74,Apache Sling JCR WebConsole Bundle,org.apache.sling.jcr.webconsole,1.0.2,'sling,jcr'
+75,Apache Sling Simple WebDAV Access to repositories,org.apache.sling.jcr.webdav,2.3.8,'sling,jcr'
+76,Apache Sling JCR Oak Repository Server,org.apache.sling.jcr.oak.server,1.1.4,sling
+77,Composum Core Sling API,com.composum.core.commons,1.8.2,'composum,core'
+78,Composum Core Configuration,com.composum.core.config,1.8.2,'composum,core'
+79,Composum Core Console,com.composum.core.console,1.8.2,'composum,core'
+80,Composum Core JS Libraries,com.composum.core.jslibs,1.8.2,'composum,core'
+81,Composum Package Manager,com.composum.core.pckgmgr,1.8.2,'composum,core'
+82,Composum User Managmenent,com.composum.core.usermgnt,1.8.2,'composum,core'
+83,Apache Jackrabbit FileVault Core Bundle,org.apache.jackrabbit.vault,3.1.42,'jackrabbit'
+84,Apache Commons Codec,org.apache.commons.codec,1.11.0
+85,Apache Commons Collections,org.apache.commons.collections,3.2.2
+86,Apache Commons Collections,org.apache.commons.collections4,4.1.0
+87,Apache Geronimo Bundles: commons-httpclient-3.1,org.apache.geronimo.bundles.commons-httpclient,3.1.0.2
+88,Commons Lang,org.apache.commons.lang,2.6
+89,Apache Commons Lang,org.apache.commons.lang3,3.7.0
+90,Commons Math,org.apache.commons.math,2.2
+91,Apache Apache HttpClient OSGi bundle,org.apache.httpcomponents.httpclient,4.5.4
+92,Apache Apache HttpCore OSGi bundle,org.apache.httpcomponents.httpcore,4.4.9
+93,Jackson-annotations,com.fasterxml.jackson.core.jackson-annotations,2.9.3
+94,Jackson-core,com.fasterxml.jackson.core.jackson-core,2.9.3
+95,jackson-databind,com.fasterxml.jackson.core.jackson-databind,2.9.3
+96,Apache Geronimo Bundles: jstl-1.2,org.apache.geronimo.bundles.jstl,1.2.0.1
+97,JavaMail API (compat),javax.mail,1.5.0.b01
+98,Apache Felix Http Whiteboard,org.apache.felix.http.whiteboard,3.0.0
+99,Apache ServiceMix :: Bundles :: rhino,org.apache.servicemix.bundles.rhino,1.7.7.2_1
+100,Apache Sling Adapter Manager Implementation,org.apache.sling.adapter,2.1.10,sling
+101,Apache Sling API,org.apache.sling.api,2.18.0,sling
+102,Apache Sling Authentication Service,org.apache.sling.auth.core,1.4.2,sling
+103,Apache Sling Form Based Authentication Handler,org.apache.sling.auth.form,1.0.9.SNAPSHOT,sling
+104,Apache Sling Bundle Resource Provider,org.apache.sling.bundleresource.impl,2.3.0,sling
+105,Apache Sling Context-Aware Configuration API,org.apache.sling.caconfig.api,1.1.0,sling
+106,Apache Sling Context-Aware Configuration Implementation,org.apache.sling.caconfig.impl,1.4.10,sling
+107,Apache Sling Context-Aware Configuration SPI,org.apache.sling.caconfig.spi,1.3.2,sling
+108,Apache Sling Dynamic Class Loader Support,org.apache.sling.commons.classloader,1.4.2,sling
+109,Apache Sling Commons Java Compiler,org.apache.sling.commons.compiler,2.3.6,sling
+110,Apache Sling Commons FileSystem ClassLoader,org.apache.sling.commons.fsclassloader,1.0.8,sling
+111,Apache Sling MIME type mapping support,org.apache.sling.commons.mime,2.1.10,sling
+112,Apache Sling Commons OSGi support,org.apache.sling.commons.osgi,2.4.0,sling
+113,Apache Sling Scheduler Support,org.apache.sling.commons.scheduler,2.7.2,sling
+114,Apache Sling Thread Support,org.apache.sling.commons.threads,3.2.16,sling
+115,Apache Sling Discovery API,org.apache.sling.discovery.api,1.0.4,sling
+116,Apache Sling Discovery Base,org.apache.sling.discovery.base,2.0.8,sling
+117,Apache Sling Discovery Commons,org.apache.sling.discovery.commons,1.0.20,sling
+118,Apache Sling Oak-Based Discovery Service,org.apache.sling.discovery.oak,1.2.22,sling
+119,Apache Sling Discovery Support Bundle,org.apache.sling.discovery.support,1.0.4,sling
+120,Apache Sling Engine Implementation,org.apache.sling.engine,2.6.12,sling
+121,Apache Sling Event Support,org.apache.sling.event,4.2.10,sling
+122,Apache Sling Distributed Event Admin,org.apache.sling.event.dea,1.1.2,sling
+123,Apache Sling File System Resource Provider,org.apache.sling.fsresource,2.1.10,sling
+124,Apache Sling Health Check API,org.apache.sling.hc.api,1.0.2,sling
+125,Apache Sling Health Check Core,org.apache.sling.hc.core,1.2.10,sling
+126,Apache Sling Health Check Webconsole Plugin,org.apache.sling.hc.webconsole,1.1.2,sling
+127,Apache Sling I18N Support,org.apache.sling.i18n,2.5.12,sling
+128,Apache Sling Installer WebConsole Plugin,org.apache.sling.installer.console,1.0.2,sling
+129,Apache Sling Installer Health Checks,org.apache.sling.installer.hc,1.0.0,sling
+130,Apache Sling JCR Installer,org.apache.sling.installer.provider.jcr,3.1.26,sling
+131,Apache Sling Initial Content Loader,org.apache.sling.jcr.contentloader,2.2.4,'sling,jcr,jackrabbit'
+132,Apache Sling JCR RepoInit module,org.apache.sling.jcr.repoinit,1.1.6,sling
+133,Apache Sling JCR Resource Resolver,org.apache.sling.jcr.resource,3.0.10,sling
+134,Apache Sling Models API,org.apache.sling.models.api,1.3.6,sling
+135,Apache Sling Models Implementation,org.apache.sling.models.impl,1.4.6,sling
+136,Apache Sling Models Model Exporter - Jackson,org.apache.sling.models.jacksonexporter,1.0.8,sling
+137,Apache Sling Provisioning Model,org.apache.sling.provisioning.model,1.8.4,sling
+138,Apache Sling RepoInit Parser,org.apache.sling.repoinit.parser,1.2.0,sling
+139,Apache Sling Resource Resolver,org.apache.sling.resourceresolver,1.6.0,sling
+140,Apache Sling Sample Slingshot,org.apache.sling.sample.slingshot,0.8.1.SNAPSHOT,sling
+141,Apache Sling Scripting Implementation API,org.apache.sling.scripting.api,2.2.0,sling
+142,Apache Sling Scripting Core implementation,org.apache.sling.scripting.core,2.0.54,sling
+143,Apache Sling Wrapper Bundle for Apache Tomcat EL API,org.apache.sling.scripting.el-api,1.0.0,sling
+144,Apache Sling Scripting JavaScript Support,org.apache.sling.scripting.javascript,3.0.4,sling
+145,Apache Sling Scripting JSP Support,org.apache.sling.scripting.jsp,2.3.4,sling
+146,Apache Sling Wrapper Bundle for Apache Tomcat JSP API,org.apache.sling.scripting.jsp-api,1.0.0,sling
+147,Apache Sling JSP Tag Library,org.apache.sling.scripting.jsp.taglib,2.2.6,sling
+148,Apache Sling Scripting HTL Engine,org.apache.sling.scripting.sightly,1.0.46,sling
+149,Apache Sling Scripting HTL Compiler,org.apache.sling.scripting.sightly.compiler,1.0.16,sling
+150,Apache Sling Scripting HTL Java Compiler,org.apache.sling.scripting.sightly.compiler.java,1.0.18,sling
+151,Apache Sling Scripting HTL JavaScript Use Provider,org.apache.sling.scripting.sightly.js.provider,1.0.26,sling
+152,Apache Sling Scripting HTL Sling Models Use Provider,org.apache.sling.scripting.sightly.models.provider,1.0.6,sling
+153,Apache Sling Scripting HTL Read-Eval-Print Loop Environment,org.apache.sling.scripting.sightly.repl,1.0.4,sling
+154,Apache Sling Service User Web Console,org.apache.sling.serviceuser.webconsole,1.0.0,sling
+155,Apache Sling Service User Mapper,org.apache.sling.serviceusermapper,1.4.0,sling
+156,Apache Sling Default GET Servlets,org.apache.sling.servlets.get,2.1.30,sling
+157,Apache Sling Default POST Servlets,org.apache.sling.servlets.post,2.3.24,sling
+158,Apache Sling Servlet Resolver,org.apache.sling.servlets.resolver,2.4.22,sling
+159,Apache Sling Validation Framework API,org.apache.sling.validation.api,1.0.0,sling
+160,Apache Sling Validation Framework Core Implementation,org.apache.sling.validation.core,1.0.4,sling
+161,Apache Sling XSS Protection,org.apache.sling.xss,2.0.4,sling
+162,Apache Sling Tooling Support Source,org.apache.sling.tooling.support.source,1.0.4,sling
+163,Apache Sling Tooling Support Install,org.apache.sling.tooling.support.install,1.0.4,sling
